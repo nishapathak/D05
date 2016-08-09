@@ -5,19 +5,21 @@
 # words with more than 20 characters (not counting whitespace).
 ##############################################################################
 # Imports
-
-
+#imports(words.txt)
 # Body
-def more_than_20():
-    with open("words.txt") as fin:
-        for word in fin.readlines():
-            if len(word.strip()) > 20:
-                print(word.strip())
+def program():
+	fin = open('words.txt') 
+	for line in fin:
+		word = line.strip()
+		if len(word) > 20:
+			print(word)
+
+
 
 
 ##############################################################################
 def main():
-    more_than_20()
+    pass  # Call your functions here.
 
 if __name__ == '__main__':
     main()

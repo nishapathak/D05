@@ -6,12 +6,18 @@
 ##############################################################################
 # Imports
 
+
 # Body
+def more_than_20():
+    with open("words.txt") as fin:
+        for word in fin.readlines():
+            if len(word.strip()) > 20:
+                print(word.strip())
 
 
 ##############################################################################
 def main():
-    pass  # Call your functions here.
+    more_than_20()
 
 if __name__ == '__main__':
     main()
